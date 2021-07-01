@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Cool Math Game</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div id="nameandscore">
+			<h4 id="player1name"></h4><span id="player1score"></span>
+			<br>
+			<h4 id="player2name"></h4><span id="player2score"></span>
+		</div>
+
+		<center>
+			<h1 style="color: white;">Cool Math Game</h1>
+			<br>
+			<br>
+
+			<h2 id="questionturn">Question Turn - <span id="question"></span></h2>
+			<h2 id="answerturn">Answer Turn - <span id="answer"></span></h2>
+			<br><br>
+
+			<div id="output"></div>
+			<br><br>
+
+			<label><b style="color: red">Number 1</b></label>
+			<br><br>
+			<input id="number1" type="number" placeholder="Your First Number">
+			<br><br>
+
+			<label><b style="color: red">Number 2</b></label>
+			<br><br>
+			<input id="number2" type="number" placeholder="Your Second Number">
+			<br><br>
+
+			<button class="btn btn-success" id="sendbtn" style="width: 30%;" onclick="send()">Send</button>
+
+		</center>
+	</div>
+
+	<script src="game.js"></script>
+</body>
+
+</html>
